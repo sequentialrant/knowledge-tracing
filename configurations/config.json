@@ -1,0 +1,19 @@
+{
+    "COLUMNS": {
+        "DATA_FILEPATH": "/Users/s.havaldar/Documents/Experiments/BKT_Subversion/test_bkt_v16/data/student_transactions_in_school.csv",
+        "CONNECTION_TYPE": "csv",
+        "STUDENT_COL": "studentid",
+        "MLOID_COL": "skillid",
+        "QUESTION_CODE_COL": "qcode",
+        "STARTTIME_COL": "starttime",
+        "SCORE_COL": "correct",
+        "LESSONTYPE_COL": "lessontype",
+        "SUBJECT_NAME_COL": "subject_name",
+        "GUESS_BOUND": 0.25,
+        "SLIP_BOUND": 0.25,
+        "OPT_METHOD": "L-BFGS-B",
+        "TOLERANCE": "None",
+        "MAX_ITERS": 100,
+        "APPLIED_MODEL_PARAMS": "written"
+    }
+}
