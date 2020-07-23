@@ -1,5 +1,4 @@
 """
-Alef Education
 Author: Srinidhi Havaldar
 Date: January 08, 2019
 """
