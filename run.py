@@ -1,5 +1,4 @@
 """
-Author: Srinidhi Havaldar
 Date: January 08, 2019
 """
 
@@ -14,7 +13,7 @@ ap.add_argument("-c", "--config", required=True, help="Path to configuration fil
 args = vars(ap.parse_args())
 # Read data file, configuration file, connection type
 CONFIG_FILE = args["config"]
-# CONFIG_FILE = "/Users/s.havaldar/Documents/Experiments/BKT_Subversion/test_bkt_v16/configurations/config.json"
+# CONFIG_FILE = "configurations/config.json"
 
 # Instantiate DataLoader and BKT objects, and fit BKT parameters
 dl = DataLoader(CONFIG_FILE)
@@ -23,7 +22,7 @@ bkt = BKT(dl, data)
 bkt.fit()
 
 skill_models = pd.DataFrame(bkt.skill_models).transpose()
-skill_models.to_csv("/Users/s.havaldar/Documents/Experiments/BKT_Subversion/test_bkt_v16/results/skill_models.csv")
+skill_models.to_csv("skill_models.csv")
 
-# Apply fitted BKT parameters and write to a CSV file
+# Apply fitted parameters and write to a CSV file
 bkt.predict()
