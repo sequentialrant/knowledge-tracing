@@ -136,10 +136,7 @@ class BKT(DataLoader):
     def predict(self, params=None):
         """
         Applies estimated parameters to compute skill-specific mastery for every student.
-
-        If params=None, predict uses the parameters from the skill_models, otherwise parameters associated
-        with every skill should be passed in the format dict[skill]: [mastery, guess, slip, transition]
-
+        
         :params (dict):
         :return: CSV file
         """
